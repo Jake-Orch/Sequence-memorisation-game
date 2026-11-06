@@ -1,0 +1,37 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"3 Definitions.c
+[; ;Definitions.c: 3: volatile char userInput = 0;
+[v _userInput `Vuc ~T0 @X0 1 e ]
+[i _userInput
+-> -> 0 `i `uc
+]
+"5
+[; ;Definitions.c: 5: const char arrowLeft[8] = {
+[v _arrowLeft `Cuc ~T0 @X0 -> 8 `i e ]
+[i _arrowLeft
+:U ..
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+-> -> 16 `i `uc
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+..
+]
+"15
+[; ;Definitions.c: 15: const char arrowRight[8] = {
+[v _arrowRight `Cuc ~T0 @X0 -> 8 `i e ]
+[i _arrowRight
+:U ..
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+..
+]
